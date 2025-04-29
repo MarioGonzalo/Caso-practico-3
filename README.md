@@ -135,13 +135,23 @@ $$SNR_{lineal}= 10^{\frac{30}{10}} = 10^3 = 1000$$
 
     $$C = 1\times 10^9 \times log_2(1001) =  1 \times 10^9 \times 9.967 = 9,96710^9 bps = 9.97 Gbps$$
 
-Para los enlaces inalámbricos emplearemos una SNR diferente, de 20 db.
+3. *Inalambricos*
 
-$$SNR_{lineal}= 10^{\frac{20}{10}} = 10^2 = 100$$
+    Para los enlaces inalámbricos emplearemos una SNR diferente, de 20 db.
 
-También usaremos un ancho de banda de 80MHz y aplicamos la fórmula de Shannon
+    $$SNR_{lineal}= 10^{\frac{20}{10}} = 10^2 = 100$$
 
-$$C = 8 \times 10^7 \times log_2(1+100) =  8 \times 10^7 \times log_2(101) = 8 \times 10^7 \times 6.66 = 5,328 \times 10^8bps = 533 Mbps$$
+    También usaremos un ancho de banda de 80MHz y aplicamos la fórmula de Shannon
+
+    $$C = 8 \times 10^7 \times log_2(1+100) =  8 \times 10^7 \times log_2(101) = 8 \times 10^7 \times 6.66 = 3,33 \times 10^8bps = 533 Mbps$$
+
+4. *USB*
+
+    USB 3.0 con un ancho de banda de 500 MHz y una SNR aproximada de 20 dB, equivalente a 100 en escala lineal:
+
+    $$SNR_{lineal}= 10^{\frac{20}{10}} = 10^2 = 100$$
+
+    $$C = 5 \times 10^8 \times log_2(1+100) =  5 \times 10^8 \times log_2(101) = 5 \times 10^ \times 6.66 = 5,328 \times 10^9bps = 33 Gbps$$
 
 ## Paso 3: Capa de Red
 
@@ -232,6 +242,7 @@ Cada VLAN tiene su propia subred /24 (máscara de subred 255.255.255.0), lo cual
 - *Broadcast:* 192.168.60.256
 - *Total de Hosts Útiles:* 254
 
+  La vlan 600 tambien se ocupa del streaming
 
 ---
 ## Paso 4: Capa de Transporte – Selección de Protocolos
